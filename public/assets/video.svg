@@ -1,0 +1,14 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="videoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A80B09" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#A80B09" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="54" height="54" rx="13" fill="url(#videoGrad)" stroke="#A80B09" stroke-width="1.5"/>
+  <g>
+    <rect x="14" y="18" width="24" height="18" rx="4" stroke="#FCFCFC" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+    <path d="M38 18l6 5v8l-6 5V18z" fill="#A80B09" stroke="#FCFCFC" stroke-width="1.2"/>
+    <path d="M21 23v10l9-5-9-5z" fill="#FCFCFC" fill-opacity="0.9"/>
+  </g>
+</svg>
