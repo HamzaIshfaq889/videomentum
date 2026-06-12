@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-   basePath: "/v3",
+  basePath: "/v3",
 
-   async redirects() {
+  async redirects() {
     return [
       // Redirect root to /v3/watch (handles localhost:3000)
       {

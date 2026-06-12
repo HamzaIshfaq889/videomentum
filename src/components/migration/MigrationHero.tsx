@@ -1,6 +1,15 @@
 "use client";
 
+import { ArrowDown } from "lucide-react";
+import { useCallback } from "react";
+
 export const MigrationHero = () => {
+  const scrollToSection = useCallback((id: string) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
+
   return (
     <section className="relative flex items-center overflow-hidden min-h-[480px]">
       <style>{`
@@ -93,15 +102,24 @@ export const MigrationHero = () => {
 
         <p className="hero-sub text-[16px] font-light text-[#cccccc] leading-[1.7] mb-8 max-w-[540px]">
           YouTube is suppressing your content. Other platforms are demonetizing
-          your work. Videomentum doesn&apos;t suppress creators — we build theatres
-          for them. Bring your content. Keep your audience. Own your lane.
+          your work. Videomentum doesn&apos;t suppress creators — we build
+          theatres for them. Bring your content. Keep your audience. Own your
+          lane.
         </p>
 
         <div className="hero-cta-row flex gap-3 items-center">
-          <button className="bg-[#A80B09] text-white text-[15px] font-semibold px-10 py-4 rounded border-none cursor-pointer transition-all duration-200 hover:bg-[#c70d0a] hover:-translate-y-px">
-            Start Your Migration →
+          <button
+            type="button"
+            className="bg-[#A80B09] text-white text-[15px] font-semibold px-10 py-4 rounded border-none cursor-pointer transition-all duration-200 hover:bg-[#c70d0a] hover:-translate-y-px flex justify-center items-center"
+            onClick={() => scrollToSection("migration-signup")}
+          >
+            Contact us <ArrowDown className="ml-2 w-5 h-5" />
           </button>
-          <button className="bg-transparent text-[#cccccc] text-[15px] font-medium px-7 py-4 rounded border border-[#2a2a2a] cursor-pointer transition-colors duration-200 hover:border-[#A80B09] hover:text-white">
+          <button
+            type="button"
+            className="bg-transparent text-[#cccccc] text-[15px] font-medium px-7 py-4 rounded border border-[#2a2a2a] cursor-pointer transition-colors duration-200 hover:border-[#A80B09] hover:text-white"
+            onClick={() => scrollToSection("migration-steps")}
+          >
             See How It Works
           </button>
         </div>

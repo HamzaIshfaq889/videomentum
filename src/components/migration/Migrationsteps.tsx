@@ -25,7 +25,11 @@ const steps = [
 
 export const MigrationSteps = () => {
   return (
-    <section className="bg-[#0d0d0d] border-b border-[#1e1e1e]">
+    <section
+      id="migration-steps"
+      className="bg-[#0d0d0d] border-b border-[#1e1e1e]"
+      style={{ scrollMarginTop: "120px" }}
+    >
       <style>{`
         .steps-row {
           position: relative;
@@ -95,8 +99,12 @@ export const MigrationSteps = () => {
               >
                 {step.num}
               </div>
-              <p className="step-title text-[14px] font-semibold text-white mb-1.5">{step.title}</p>
-              <p className="step-desc text-[12px] text-[#888888] leading-[1.6] font-light">{step.desc}</p>
+              <p className="step-title text-[14px] font-semibold text-white mb-1.5">
+                {step.title}
+              </p>
+              <p className="step-desc text-[12px] text-[#888888] leading-[1.6] font-light">
+                {step.desc}
+              </p>
             </div>
           ))}
         </div>

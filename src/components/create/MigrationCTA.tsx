@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight, ArrowRightIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export const MigrationCTA = () => {
@@ -89,9 +90,13 @@ export const MigrationCTA = () => {
               className="btn-migrate bg-[#a80b09] text-white text-sm font-semibold px-8 py-3.5 rounded cursor-pointer whitespace-nowrap text-center transition-all duration-200 hover:bg-[#c70d0a] hover:-translate-y-px"
               onClick={() => router.push("/migration")}
             >
-              Start Migration →
+              Start Creating{" "}
+              <ArrowRight className="inline-block ml-1 w-5 h-5" />
             </button>
-            <button className="btn-learn bg-transparent text-[#888888] text-xs font-medium px-8 py-2 rounded border border-[#1e1e1e] cursor-pointer whitespace-nowrap text-center w-full transition-all duration-200 hover:border-[#a80b09] hover:text-white">
+            <button
+              onClick={() => router.push("/faq")}
+              className="btn-learn bg-transparent text-[#888888] text-xs font-medium px-8 py-2 rounded border border-[#1e1e1e] cursor-pointer whitespace-nowrap text-center w-full transition-all duration-200 hover:border-[#a80b09] hover:text-white"
+            >
               Learn More
             </button>
           </div>

@@ -13,7 +13,7 @@ const perks = [
 export const SignUpForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [platform, setPlatform] = useState("YouTube");
+  const [platform, setPlatform] = useState("");
   const [profileUrl, setProfileUrl] = useState("");
   const [audienceSize, setAudienceSize] = useState("Under 1,000");
   const [contentDescription, setContentDescription] = useState("");
@@ -81,7 +81,11 @@ export const SignUpForm = () => {
   );
 
   return (
-    <section className="bg-black border-b border-[#1e1e1e]">
+    <section
+      id="migration-signup"
+      className="bg-black border-b border-[#1e1e1e]"
+      style={{ scrollMarginTop: "120px" }}
+    >
       <style>{`
         .form-input,
         .form-select {
@@ -164,7 +168,7 @@ export const SignUpForm = () => {
             className="text-[24px] text-white mb-1 tracking-[0.5px]"
             style={{ fontFamily: "'Bebas Neue', cursive" }}
           >
-            Apply for Migration
+            Work With Videomentum
           </p>
           <p className="text-[12px] text-[#888888] mb-6">
             Takes less than 3 minutes. We&apos;ll handle the rest.
@@ -210,10 +214,15 @@ export const SignUpForm = () => {
                   onChange={(e) => setPlatform(e.target.value)}
                   required
                 >
-                  <option>YouTube</option>
-                  <option>Rumble</option>
-                  <option>TikTok</option>
-                  <option>Other</option>
+                  <option value="" disabled>
+                    Select a platform
+                  </option>
+                  <option value="YouTube">YouTube</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="X">X</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
 
@@ -258,6 +267,7 @@ export const SignUpForm = () => {
                   placeholder="e.g. AI-generated action shorts, martial arts films..."
                   value={contentDescription}
                   onChange={(e) => setContentDescription(e.target.value)}
+                  required
                 />
               </div>
             </div>
