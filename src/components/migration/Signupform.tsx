@@ -15,7 +15,7 @@ export const SignUpForm = () => {
   const [email, setEmail] = useState("");
   const [platform, setPlatform] = useState("");
   const [profileUrl, setProfileUrl] = useState("");
-  const [audienceSize, setAudienceSize] = useState("Under 1,000");
+  const [audienceSize, setAudienceSize] = useState("");
   const [contentDescription, setContentDescription] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -242,19 +242,17 @@ export const SignUpForm = () => {
 
               <div>
                 <label className="block text-[11px] font-semibold text-[#cccccc] tracking-[1px] uppercase mb-1.5">
-                  Approx. Audience Size
+                  Total Monthly Viewers
                 </label>
-                <select
-                  className="form-select"
+                <input
+                  className="form-input"
+                  type="number"
+                  placeholder="e.g. 250000"
+                  min={0}
                   value={audienceSize}
                   onChange={(e) => setAudienceSize(e.target.value)}
                   required
-                >
-                  <option>Under 1,000</option>
-                  <option>1,000 – 10,000</option>
-                  <option>10,000 – 100,000</option>
-                  <option>100,000+</option>
-                </select>
+                />
               </div>
 
               <div>
