@@ -111,7 +111,7 @@ export const MigrationHero = () => {
           <button
             type="button"
             className="bg-[#A80B09] text-white text-[15px] font-semibold px-10 py-4 rounded border-none cursor-pointer transition-all duration-200 hover:bg-[#c70d0a] hover:-translate-y-px flex justify-center items-center"
-            onClick={() => scrollToSection("migration-signup")}
+            onClick={() => scrollToSection("migration-signup-form")}
           >
             Contact us <ArrowDown className="ml-2 w-5 h-5" />
           </button>

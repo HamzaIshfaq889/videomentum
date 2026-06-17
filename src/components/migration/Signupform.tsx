@@ -163,7 +163,11 @@ export const SignUpForm = () => {
         </div>
 
         {/* Form card */}
-        <div className="signup-form-card bg-[#111111] border border-[#1e1e1e] rounded-[10px] p-9">
+        <div
+          id="migration-signup-form"
+          className="signup-form-card bg-[#111111] border border-[#1e1e1e] rounded-[10px] p-9"
+          style={{ scrollMarginTop: "120px" }}
+        >
           <p
             className="text-[24px] text-white mb-1 tracking-[0.5px]"
             style={{ fontFamily: "'Bebas Neue', cursive" }}
