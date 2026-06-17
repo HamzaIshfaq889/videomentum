@@ -84,7 +84,7 @@ export const MigrationSteps = () => {
           className="steps-section-title text-[40px] text-white tracking-[0.5px] mb-8"
           style={{ fontFamily: "'Bebas Neue', cursive" }}
         >
-          How Migration Works
+          How it Works
         </h2>
 
         <div className="steps-row grid grid-cols-4 gap-0 mt-8">

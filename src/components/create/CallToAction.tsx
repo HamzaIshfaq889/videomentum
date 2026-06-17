@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { ContactFormModal } from "@/components/ContactFormModal";
+import { useRouter } from "next/navigation";
 
 const features = [
   {
@@ -27,6 +28,7 @@ const features = [
 
 export const CallToAction = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const router = useRouter();
   return (
     <section className="w-full border-t border-zinc-900 bg-black px-6 py-16">
       <div className="mx-auto w-full">
@@ -53,14 +55,10 @@ export const CallToAction = () => {
                   className="h-12 w-12"
                 />
               </div>
-              <h3
-                className="font-figtree text-lg font-bold leading-tight tracking-[0.35px] text-[#FFFFFF] sm:mb-3 sm:text-xl sm:leading-[64px]"
-              >
+              <h3 className="font-figtree text-lg font-bold leading-tight tracking-[0.35px] text-[#FFFFFF] sm:mb-3 sm:text-xl sm:leading-[64px]">
                 {feature.title}
               </h3>
-              <p
-                className="font-figtree text-[18px] font-normal leading-6 tracking-[-0.31px] text-[#999999]"
-              >
+              <p className="font-figtree text-[18px] font-normal leading-6 tracking-[-0.31px] text-[#999999]">
                 {feature.description}
               </p>
             </div>
@@ -71,12 +69,12 @@ export const CallToAction = () => {
         <div className="mt-16 flex justify-center">
           <button
             type="button"
-            onClick={() => setModalOpen(true)}
+            onClick={() => router.push("/migration")}
             className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#A80B09] px-8 py-4 text-center font-figtree text-2xl font-bold leading-6 tracking-[-0.31px] text-white transition-opacity hover:opacity-90"
           >
             Start Creating
             <Image
-               src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? "/"}/assets/arrow-right.svg`}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? "/"}/assets/arrow-right.svg`}
               alt=""
               width={24}
               height={24}

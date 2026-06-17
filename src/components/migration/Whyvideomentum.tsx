@@ -70,7 +70,7 @@ export const WhyVideomentum = () => {
           className="why-section-title text-[40px] text-white tracking-[0.5px] mb-8"
           style={{ fontFamily: "'Bebas Neue', cursive" }}
         >
-          Why Migrate to Videomentum?
+          Why Videomentum?
         </h2>
 
         <div className="why-grid grid grid-cols-3 gap-0.5">
@@ -88,8 +88,12 @@ export const WhyVideomentum = () => {
               >
                 {card.num}
               </p>
-              <p className="text-[15px] font-semibold text-white mb-2">{card.title}</p>
-              <p className="text-[13px] text-[#888888] leading-[1.65] font-light">{card.desc}</p>
+              <p className="text-[15px] font-semibold text-white mb-2">
+                {card.title}
+              </p>
+              <p className="text-[13px] text-[#888888] leading-[1.65] font-light">
+                {card.desc}
+              </p>
             </div>
           ))}
         </div>
