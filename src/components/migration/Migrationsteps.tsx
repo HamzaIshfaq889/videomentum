@@ -14,7 +14,7 @@ const steps = [
   {
     num: "3",
     title: "Upload",
-    desc: "Migrate your existing content or start fresh. We support bulk uploads and assist with the transition.",
+    desc: "Add your existing content here too, or start fresh — your other platforms stay exactly as they are. We support bulk uploads and handle the heavy lifting.",
   },
   {
     num: "4",

@@ -82,7 +82,7 @@ export const MigrationHero = () => {
           letterSpacing: "-4px",
         }}
       >
-        MIGRATE
+        EXPAND
       </span>
 
       {/* Content */}
@@ -95,16 +95,17 @@ export const MigrationHero = () => {
           className="hero-title text-[72px] leading-[0.95] tracking-[1px] text-white mb-5"
           style={{ fontFamily: "'Bebas Neue', cursive" }}
         >
-          Done Playing
+          Add A Stage.
           <br />
-          By <span className="text-[#A80B09]">Their</span> Rules?
+          Lose <span className="text-[#A80B09]">Nothing</span>.
         </h1>
 
         <p className="hero-sub text-[16px] font-light text-[#cccccc] leading-[1.7] mb-8 max-w-[540px]">
           YouTube is suppressing your content. Other platforms are demonetizing
-          your work. Videomentum doesn&apos;t suppress creators — we build
-          theatres for them. Bring your content. Keep your audience. Own your
-          lane.
+          your work. Videomentum isn&apos;t asking you to leave any of
+          that behind — we give you another stage where nothing gets
+          buried. Keep every platform you&apos;re already on. Just add the
+          one that doesn&apos;t suppress you.
         </p>
 
         <div className="hero-cta-row flex gap-3 items-center">

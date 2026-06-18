@@ -4,7 +4,7 @@ import { useCallback, useState } from "react";
 
 const perks = [
   "Fast-track onboarding for established creators",
-  "Dedicated migration support team",
+  "Dedicated onboarding support team",
   "Featured placement on launch",
   "Earn credits from your first view",
   "No content suppression — ever",
@@ -43,7 +43,7 @@ export const SignUpForm = () => {
             body: JSON.stringify({
               from: email,
               fromname: name,
-              subject: "Migration Application",
+              subject: "Creator Application",
               body,
             }),
           },
@@ -140,9 +140,9 @@ export const SignUpForm = () => {
           >
             Ready to
             <br />
-            <span className="text-[#A80B09]">Own</span> Your
+            <span className="text-[#A80B09]">Expand</span> Your
             <br />
-            Platform?
+            Reach?
           </h2>
           <p className="text-[14px] text-[#888888] font-light leading-[1.65] mb-6">
             Fill in the form and our team will be in touch within 48 hours.

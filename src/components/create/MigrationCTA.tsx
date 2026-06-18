@@ -46,7 +46,7 @@ export const MigrationCTA = () => {
             .banner-right         { flex-direction: column; gap: 8px; }
             .btn-migrate,
             .btn-learn            { width: 100%; }
-            .platform-tag         { font-size: 10px; }
+            .platform-tag         { font-size: 12px; }
           }
         `}</style>
 
@@ -64,8 +64,9 @@ export const MigrationCTA = () => {
 
             <p className="banner-sub text-[13px] text-[#cccccc] font-light max-w-[480px] leading-[1.5] mb-3">
               YouTube demonetizing your videos? Shadow-banned on other
-              platforms? We don&apos;t suppress creators. Migrate your content
-              and keep your audience — on your terms.
+              platforms? We don&apos;t suppress creators. Keep every platform
+              you&apos;re already on, and add Videomentum as another stage —
+              on your terms.
             </p>
 
             {/* Platform tags */}
@@ -73,13 +74,13 @@ export const MigrationCTA = () => {
               {["YouTube", "Rumble", "TikTok"].map((platform) => (
                 <span
                   key={platform}
-                  className="platform-tag text-[11px] text-[#555555] bg-white/[0.04] border border-[#1e1e1e] px-2.5 py-1 rounded-full line-through"
+                  className="platform-tag text-[14px] text-[#888888] bg-white/[0.04] border border-[#1e1e1e] px-3 py-1.5 rounded-full"
                 >
                   {platform}
                 </span>
               ))}
-              <span className="platform-tag text-[11px] text-[#888888] bg-white/[0.04] border border-[#1e1e1e] px-2.5 py-1 rounded-full">
-                Videomentum
+              <span className="platform-tag text-[14px] text-[#a80b09] bg-[rgba(168,11,9,0.08)] border border-[rgba(168,11,9,0.3)] px-3 py-1.5 rounded-full font-semibold">
+                + Videomentum
               </span>
             </div>
           </div>
