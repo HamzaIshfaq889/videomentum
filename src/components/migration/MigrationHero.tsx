@@ -97,15 +97,15 @@ export const MigrationHero = () => {
         >
           Add A Stage.
           <br />
-          Lose <span className="text-[#A80B09]">Nothing</span>.
+          Keep <span className="text-[#A80B09]">Everything</span>.
         </h1>
 
         <p className="hero-sub text-[16px] font-light text-[#cccccc] leading-[1.7] mb-8 max-w-[540px]">
-          YouTube is suppressing your content. Other platforms are demonetizing
-          your work. Videomentum isn&apos;t asking you to leave any of
-          that behind — we give you another stage where nothing gets
-          buried. Keep every platform you&apos;re already on. Just add the
-          one that doesn&apos;t suppress you.
+          {`Your work deserves a platform that reflects its true value.
+          Videomentum is built on appreciation - for what you create, the
+          communities you reach, and the vision you’re pursuing. Bring us into
+          the journey alongside everything you’ve already achieved, and keep
+          growing with confidence, on your own terms.`}
         </p>
 
         <div className="hero-cta-row flex gap-3 items-center">
@@ -127,8 +127,8 @@ export const MigrationHero = () => {
 
         <div className="hero-trust mt-6 flex items-center gap-5 text-[12px] text-[#888888]">
           {[
-            "No content suppression",
-            "No algorithm penalties",
+            "Respected, not restricted",
+            "Grow on your own terms",
             "Earn credits from day one",
           ].map((item) => (
             <div key={item} className="flex items-center gap-1.5">

@@ -2,19 +2,19 @@
 
 const painCards = [
   {
-    icon: "⚡",
-    title: "Demonetization without warning",
-    desc: "Your video goes viral and YouTube strips the revenue. No explanation, no recourse.",
+    icon: "🎭",
+    title: "Solo channels, solo struggle",
+    desc: "Every creator builds an audience alone, starting from zero with no one in their corner.",
   },
   {
-    icon: "👻",
-    title: "Shadow banning & reduced reach",
-    desc: "Your content exists but nobody sees it. The algorithm quietly buries it.",
+    icon: "⚔️",
+    title: "Pitted against each other",
+    desc: "Algorithms turn creators into competitors, fighting over the same fleeting attention.",
   },
   {
-    icon: "🚫",
-    title: "Strikes, bans & account termination",
-    desc: "One strike and years of content disappear overnight. No appeal, no warning.",
+    icon: "📉",
+    title: "A ceiling on what one person can do",
+    desc: "Going viral alone is harder and rarer than rising together with a community.",
   },
 ];
 
@@ -53,15 +53,15 @@ export const PainPoints = () => {
               className="pain-title text-[40px] text-white leading-[1.05] tracking-[0.5px] mb-4"
               style={{ fontFamily: "'Bebas Neue', cursive" }}
             >
-              The Platforms You&apos;re On
+              Creators Weren&apos;t Built
               <br />
-              Are Working Against You
+              To Compete Alone
             </h2>
             <p className="pain-desc text-[14px] font-light text-[#cccccc] leading-[1.7]">
-              If you&apos;re a creator making content that pushes boundaries, tells
-              hard truths, or just doesn&apos;t fit the algorithm — you already know
-              what it feels like to be suppressed. Videomentum was built for
-              exactly this.
+              Social platforms pit you against millions of other creators for
+              the same fleeting attention. Videomentum is different - we bring
+              like-minded artists together inside a single Channel, where you
+              grow your audience, your reach, and your rewards together.
             </p>
           </div>
 
@@ -76,8 +76,12 @@ export const PainPoints = () => {
                   {card.icon}
                 </div>
                 <div>
-                  <p className="text-[13px] font-semibold text-white mb-0.5">{card.title}</p>
-                  <p className="text-[12px] text-[#888888] leading-[1.5] font-light">{card.desc}</p>
+                  <p className="text-[13px] font-semibold text-white mb-0.5">
+                    {card.title}
+                  </p>
+                  <p className="text-[12px] text-[#888888] leading-[1.5] font-light">
+                    {card.desc}
+                  </p>
                 </div>
               </div>
             ))}

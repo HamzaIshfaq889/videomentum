@@ -49,13 +49,12 @@ export const MigrationCTA = () => {
             .platform-tag         { font-size: 12px; }
           }
         `}</style>
-
         {/* Banner container */}
         <div className="migration-banner relative overflow-hidden border border-[#1e1e1e] border-l-4 border-l-[#a80b09] rounded-lg bg-[#111111] flex items-center justify-between gap-8 px-8 py-7">
           {/* Left section */}
           <div className="relative z-10 flex-1">
             <span className="block text-[10px] font-bold text-[#a80b09] tracking-[2.5px] uppercase mb-2">
-              Getting suppressed elsewhere?
+              You deserve a platform built for you
             </span>
 
             <h3 className="banner-title text-[28px] text-white tracking-[0.5px] mb-1.5">
@@ -63,23 +62,15 @@ export const MigrationCTA = () => {
             </h3>
 
             <p className="banner-sub text-[13px] text-[#cccccc] font-light max-w-[480px] leading-[1.5] mb-3">
-              YouTube demonetizing your videos? Shadow-banned on other
-              platforms? We don&apos;t suppress creators. Keep every platform
-              you&apos;re already on, and add Videomentum as another stage —
-              on your terms.
+              We value your work and respect your creative voice. Keep every
+              platform you&apos;re already on, and add Videomentum as another
+              stage to shine, grow, and reach your full potential - on your
+              terms.
             </p>
 
-            {/* Platform tags */}
+            {/* Videomentum tag */}
             <div className="flex gap-2 mt-3 flex-wrap">
-              {["YouTube", "Rumble", "TikTok"].map((platform) => (
-                <span
-                  key={platform}
-                  className="platform-tag text-[14px] text-[#888888] bg-white/[0.04] border border-[#1e1e1e] px-3 py-1.5 rounded-full"
-                >
-                  {platform}
-                </span>
-              ))}
-              <span className="platform-tag text-[14px] text-[#a80b09] bg-[rgba(168,11,9,0.08)] border border-[rgba(168,11,9,0.3)] px-3 py-1.5 rounded-full font-semibold">
+              <span className="platform-tag inline-flex items-center gap-1.5 text-[14px] text-white bg-gradient-to-r from-[#a80b09] to-[#c70d0a] border border-[rgba(168,11,9,0.5)] px-4 py-1.5 rounded-full font-semibold shadow-[0_0_16px_rgba(168,11,9,0.35)]">
                 + Videomentum
               </span>
             </div>

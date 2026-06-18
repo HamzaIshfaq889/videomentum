@@ -9,7 +9,7 @@ const steps = [
   {
     num: "2",
     title: "We Review",
-    desc: "Our team reviews your application within 48 hours and sets up your theatre.",
+    desc: "Our team reviews your application and welcomes you into the Channel.",
   },
   {
     num: "3",
@@ -19,7 +19,7 @@ const steps = [
   {
     num: "4",
     title: "Go Live",
-    desc: "Your theatre goes live on the Videomentum platform. Start earning credits from your very first view.",
+    desc: "You take the stage alongside the rest of the Channel. Start earning credits from your very first view.",
   },
 ];
 

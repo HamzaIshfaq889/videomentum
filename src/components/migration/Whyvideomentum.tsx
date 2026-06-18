@@ -4,7 +4,7 @@ const whyCards = [
   {
     num: "01",
     title: "Your content, your rules",
-    desc: "We don't suppress content based on algorithm preferences or advertiser pressure. If it's legal, it lives on Videomentum without interference.",
+    desc: "We champion bold, authentic content. If it's legal, it has a home on Videomentum - no algorithm gatekeeping, no advertiser pressure.",
   },
   {
     num: "02",
@@ -13,8 +13,8 @@ const whyCards = [
   },
   {
     num: "03",
-    title: "Your own theatre",
-    desc: "You don't just get a channel. You get a branded theatre — your own space within the Videomentum universe with your identity, your films, your audience.",
+    title: "A community, not a competition",
+    desc: "You're not getting a solo channel - you're joining a community of like-minded creators inside a single Channel, sharing the stage like a community theater or a concert tour. Everyone shares the spotlight, the audience, and the rewards.",
   },
 ];
 
